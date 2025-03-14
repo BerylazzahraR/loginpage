@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F7F7F7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #854836;
+            border-radius: 12px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 12px;
+        }
+        .content h1 {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .content p {
+            color: #f3f3f3;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        .login-form {
+            background-color: #795757;
+            border-radius: 12px;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        .login-form h2 {
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        .login-form label {
+            color: #f3f3f3;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 6px;
+            text-align: left;
+        }
+        .login-form input {
+            width: 80%;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+        .form-checkbox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            margin-bottom: 16px;
+        }
+        .form-checkbox a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+        .login-form button {
+            width: 100%;
+            background-color: #FFB22C;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 12px;
+        }
+        .google-signin {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            color: #105deb;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .google-signin i {
+            margin-right: 8px;
+        }
+        .login-form p {
+            color: #f3f3f3;
+            text-align: center;
+            font-size: 14px;
+        }
+        .login-form p a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <img src="logo lengkap kopken.png" alt="Kopi Kenangan">
+            <h1>KOPI KENANGAN</h1>
+            <p>Kopinya Enak, Semanis Kenanganmu</p>
+        </div>
+        <div class="login-form">
+            <h2>Log In</h2>
+            <form>
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" placeholder="BerylAzzahra">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" placeholder="243307038">
+                <div class="form-checkbox">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit">LOG IN</button>
+                <a href="#" class="google-signin">
+                    <i class="fab fa-google"></i> Sign in with Google
+                </a>
+                <p>Don't have an account? <a href="#">Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
